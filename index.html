@@ -1,0 +1,40 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="style.css" />
+	<script type="text/javascript" src="validation.js"></script>	
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+	<div class="MainPan z-depth-5" align="center" >
+			<form name="myForm" class="custom" method="post" onsubmit="return validateForm()">
+				<div style="text-align: left;">
+					<p>Username:</p>
+					<input name="uname" type="text"/>
+					<div id="usererr"></div>
+					<p>Password:</p>
+					<input name="upass" type="password"/>
+					<p id="pwderr"></p>
+					<p>SSID:</p>
+					<input name="id" type="text"/>
+					<p id="ssiderr"></p>
+					<p>Passkey:</p>
+					<input name="pass" type="password"/>
+					<p id="passerr"></p>
+				</div>
+				<div style="width: inherit; margin-left: 0px; margin-right: 0px;" class="buttons">
+					<button class="btn waves-effect waves-light blue-grey darken-1" style="margin:3%;" type="reset" >Cancel</button>
+					<button formaction="submit.php" class="btn waves-effect waves-light blue-grey darken-1" style="margin:3%;type="submit">Submit</button>
+				</div>
+			</form>
+	</div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
